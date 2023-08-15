@@ -16,10 +16,10 @@ import {
   Message,
   DarkMode,
   LightMode,
-  Notification,
   Help,
   Menu,
   Close,
+  Notifications,
 } from "@mui/icons-material";
 
 import { useDispatch, useSelector } from "react-redux";
@@ -86,7 +86,7 @@ const Navbar = () => {
             )}
           </IconButton>
           <Message sx={{ fontSize: "25 px" }} />
-          <Notification sx={{ fontSize: "25 px" }} />
+          <Notifications sx={{ fontSize: "25 px" }} />
           <Help sx={{ fontSize: "25 px" }} />
           <FormControl variant="standard" value={fullName}>
             <Select
@@ -160,7 +160,7 @@ const Navbar = () => {
               )}
             </IconButton>
             <Message sx={{ fontSize: "25 px" }} />
-            <Notification sx={{ fontSize: "25 px" }} />
+            <Notifications sx={{ fontSize: "25 px" }} />
             <Help sx={{ fontSize: "25 px" }} />
             <FormControl variant="standard" value={fullName}>
               <Select
