@@ -19,6 +19,7 @@ const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
 
       <BrowserRouter>
         <ThemeProvider theme={theme}>
+          <CssBaseline/>
           <Routes>
             <Route path='/' element={<LoginPage/>}/>
             <Route path='/home' element={<HomePage/>}/>
