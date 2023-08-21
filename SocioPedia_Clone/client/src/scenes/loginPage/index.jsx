@@ -1,4 +1,5 @@
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
+import Form from "./Form";
 
 const LoginPage = () => {
   const theme = useTheme();
@@ -26,6 +27,7 @@ const LoginPage = () => {
         <Typography fontWeight="500" varient="h5" sx={{ mb: "1.5rem" }}>
           Welcome to SocioPedia, the Social Media for SocioPaths!
         </Typography>
+        <Form />
       </Box>
     </Box>
   );
