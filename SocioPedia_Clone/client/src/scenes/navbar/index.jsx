@@ -77,16 +77,16 @@ const Navbar = () => {
 
       {/*Desktop Nav*/}
       {isNonMobileScreens ? (
-        <FlexBetween gap="2 rem">
+        <FlexBetween gap="2rem">
           <IconButton onClick={() => dispatch(setMode())}>
             {theme.palette.mode === "dark" ? (
-              <DarkMode sx={{ fontSize: "25 px" }}></DarkMode>
+              <DarkMode sx={{ fontSize: "25px" }}></DarkMode>
             ) : (
-              <LightMode sx={{ color: dark, fontSize: "25 px" }}></LightMode>
+              <LightMode sx={{ color: dark, fontSize: "25px" }}></LightMode>
             )}
           </IconButton>
-          <Message sx={{ fontSize: "25 px" }} />
-          <Notifications sx={{ fontSize: "25 px" }} />
+          <Message sx={{ fontSize: "25px" }} />
+          <Notifications sx={{ fontSize: "25px" }} />
           <Help sx={{ fontSize: "25 px" }} />
           <FormControl variant="standard" value={fullName}>
             <Select
@@ -100,6 +100,7 @@ const Navbar = () => {
                   pr: "0.25rem",
                   width: "3rem",
                 },
+
                 "& .MuiSelect-select:focus": {
                   backgroundColor: neutralLight,
                 },
